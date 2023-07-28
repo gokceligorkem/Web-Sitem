@@ -1,0 +1,65 @@
+﻿@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@model IPagedList<EntityLayer.Concrete.WriterUser>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+<div class="row ">
+    <div class="col-12 grid-margin">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">ReferansListesi</h4>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+
+                                <th> # </th>
+                                <th>Adı Soyadı</th>
+                                <th> Mesleği</th>
+                                <th> Mesajı </th>
+                                <th> Mesaj</th>
+                                
+                                <th> Detaylar </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    
+                                    <td>
+                                        @*<img src="@item.ImageUrl" alt="" />*@
+                                    </td>
+                                    <td>@item.Name+"  "+@item.Surname</td>
+                                    <td> @item.Job</td>
+                                    <td> @item.Content </td>
+                                    <td>
+                                        @if (item.Status)
+                                        {
+                                            <span class="badge badge-success">Yayında</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge badge-danger">Bekleniyor</span>
+                                        }
+                                    </td>
+                                    <td> <a href="/Testimonial/UpdateTestimonial/@item.Id" class="btn btn-outline-warning">Detay</a> </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <div class="pagination-container mt-3 d-flex justify-content-center">
+
+                        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

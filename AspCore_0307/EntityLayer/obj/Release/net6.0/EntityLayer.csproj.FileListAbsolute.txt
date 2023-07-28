@@ -1,0 +1,14 @@
+C:\Users\fls20\source\repos\AspCore_0307\EntityLayer\bin\Release\net6.0\EntityLayer.deps.json
+C:\Users\fls20\source\repos\AspCore_0307\EntityLayer\bin\Release\net6.0\EntityLayer.runtimeconfig.json
+C:\Users\fls20\source\repos\AspCore_0307\EntityLayer\bin\Release\net6.0\EntityLayer.dll
+C:\Users\fls20\source\repos\AspCore_0307\EntityLayer\bin\Release\net6.0\EntityLayer.pdb
+C:\Users\fls20\source\repos\AspCore_0307\EntityLayer\obj\Release\net6.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\fls20\source\repos\AspCore_0307\EntityLayer\obj\Release\net6.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fls20\source\repos\AspCore_0307\EntityLayer\obj\Release\net6.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\fls20\source\repos\AspCore_0307\EntityLayer\obj\Release\net6.0\EntityLayer.AssemblyInfo.cs
+C:\Users\fls20\source\repos\AspCore_0307\EntityLayer\obj\Release\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\fls20\source\repos\AspCore_0307\EntityLayer\obj\Release\net6.0\EntityLayer.dll
+C:\Users\fls20\source\repos\AspCore_0307\EntityLayer\obj\Release\net6.0\refint\EntityLayer.dll
+C:\Users\fls20\source\repos\AspCore_0307\EntityLayer\obj\Release\net6.0\EntityLayer.pdb
+C:\Users\fls20\source\repos\AspCore_0307\EntityLayer\obj\Release\net6.0\EntityLayer.genruntimeconfig.cache
+C:\Users\fls20\source\repos\AspCore_0307\EntityLayer\obj\Release\net6.0\ref\EntityLayer.dll

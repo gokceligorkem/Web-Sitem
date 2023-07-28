@@ -1,0 +1,51 @@
+﻿@using EntityLayer.Concrete
+@model List<Message>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+<div class=" grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">İletişim Sayfası</h4>
+
+            <div class="d-flex justify-content-end  ">
+   
+
+            </div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Gönderen</th>
+                     
+                            <th>Tarih</th>
+                            <th>Sil</th>
+                            <th>Mesajı Gör</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td></td>
+                                <td>@item.Name</td>
+                                <td>@item.Date</td>
+                               
+                                <td>
+                                    <a href="/AdminContact/DeleteContact/@item.MessageId" class="btn btn-outline-danger" onclick="return confirm('Bu mesajı silmek istediğinize emin misiniz?')"><i class="mdi mdi-folder-remove"></i></a>
+                                </td>
+                                <td><a href="/AdminContact/ContactDetails/@item.MessageId" class="btn btn-outline-success">Mesaj Detay</a></td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+

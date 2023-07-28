@@ -1,0 +1,17 @@
+C:\Users\fls20\source\repos\AspCore_0307\DataAccessLayer\bin\Release\net6.0\DataAccessLayer.deps.json
+C:\Users\fls20\source\repos\AspCore_0307\DataAccessLayer\bin\Release\net6.0\DataAccessLayer.runtimeconfig.json
+C:\Users\fls20\source\repos\AspCore_0307\DataAccessLayer\bin\Release\net6.0\DataAccessLayer.dll
+C:\Users\fls20\source\repos\AspCore_0307\DataAccessLayer\bin\Release\net6.0\DataAccessLayer.pdb
+C:\Users\fls20\source\repos\AspCore_0307\DataAccessLayer\bin\Release\net6.0\EntityLayer.dll
+C:\Users\fls20\source\repos\AspCore_0307\DataAccessLayer\bin\Release\net6.0\EntityLayer.pdb
+C:\Users\fls20\source\repos\AspCore_0307\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\fls20\source\repos\AspCore_0307\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fls20\source\repos\AspCore_0307\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\fls20\source\repos\AspCore_0307\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\fls20\source\repos\AspCore_0307\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\fls20\source\repos\AspCore_0307\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.csproj.CopyComplete
+C:\Users\fls20\source\repos\AspCore_0307\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.dll
+C:\Users\fls20\source\repos\AspCore_0307\DataAccessLayer\obj\Release\net6.0\refint\DataAccessLayer.dll
+C:\Users\fls20\source\repos\AspCore_0307\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.pdb
+C:\Users\fls20\source\repos\AspCore_0307\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\fls20\source\repos\AspCore_0307\DataAccessLayer\obj\Release\net6.0\ref\DataAccessLayer.dll

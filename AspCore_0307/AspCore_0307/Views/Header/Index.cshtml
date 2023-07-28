@@ -1,0 +1,46 @@
+﻿@model EntityLayer.Concrete.Feature
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+@using (Html.BeginForm("UpdateFeature", "Header", FormMethod.Post))
+{
+    <div class="col-12 grid-margin stretch-card mt-3">
+        <div class="card">
+            <div class="card-body">
+                <p class="card-description"> Yetenek Düzenleme Paneli </p>
+                <form class="forms-sample">
+                    <div class="form-group">
+
+                        @Html.HiddenFor(x => x.FeatureId, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>ÜST Başlık</label>
+
+                       
+                            @Html.TextBoxFor(x => x.Header, new { @class = "form-control" })
+                        
+                       
+                        
+                    </div>
+                    <div class="form-group">
+                        <label>ALT Başlık</label>
+                        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Animasyonlu Yazı</label>
+                        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Animasyonlu Sayfa Orta Başlık</label>
+                        @Html.TextBoxFor(x => x.Message, new { @class = "form-control" })
+                    </div>
+                    <button type="submit" class="btn btn-success mr-2">Güncelle</button>
+                   
+                </form>
+            </div>
+        </div>
+    </div>
+}
+

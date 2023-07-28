@@ -1,0 +1,27 @@
+﻿@model EntityLayer.Concrete.Announcement
+
+@{
+    ViewData["Title"] = "AnnouncementDetails";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+<div class="container">
+    <form class="form-group">
+        @Html.Hidden("ID")
+        @Html.HiddenFor(x=>x.ID)
+        <br />
+        <div class="card-body">
+            <h4 class="card-title" >@Model.Title</h4>
+            <br />
+       
+            <div class="text-right">
+                <small><b>@Model.Date.ToString("dd.MM.yyyy")</b></small>
+            </div>
+            @Html.Label("İçerik")
+
+            @Html.TextAreaFor(x=>x.Content,10,3,new{@class="form-control " })
+         </div>
+        
+    </form>
+</div>
+

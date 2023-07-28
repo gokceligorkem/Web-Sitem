@@ -1,0 +1,55 @@
+﻿    @{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!-- upto 2 directory depth-->
+<html lang="en-US">
+
+@await Html.PartialAsync("HeaderPartial")
+<body id="top">
+    @await Html.PartialAsync("NavbarPartial")
+
+
+    <div class="page-content">
+        <div id="content">
+            @await  Component.InvokeAsync("FeaturePage")
+
+            @await  Component.InvokeAsync("AboutPage")
+
+            @await  Component.InvokeAsync("ServicePage")
+
+            @await  Component.InvokeAsync("SkillPage")
+
+            @await  Component.InvokeAsync("PortfolioPage")
+
+            @await  Component.InvokeAsync("ExperiencePage")
+
+            @await Component.InvokeAsync("TestimonialPage")
+
+            @await Component.InvokeAsync("CombineComponent")
+
+
+            <footer class="pt-4 pb-4 text-center bg-light">
+                <div class="container">
+                    <div class="my-3">
+                        <div class="h4">Görkem Gökçeli</div>
+                        <p>Full Stack Developer</p>
+               
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div id="scrolltop"><a class="btn btn-secondary" href="#top"><span class="icon"><i class="fas fa-angle-up fa-x"></i></span></a></div>
+    <script src="~/Template/scripts/imagesloaded.pkgd.min.js?ver=1.2.0"></script>
+    <script src="~/Template/scripts/masonry.pkgd.min.js?ver=1.2.0"></script>
+    <script src="~/Template/scripts/BigPicture.min.js?ver=1.2.0"></script>
+    <script src="~/Template/scripts/purecounter.min.js?ver=1.2.0"></script>
+    <script src="~/Template/scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+    <script src="~/Template/scripts/aos.min.js?ver=1.2.0"></script>
+    <script src="~/Template/scripts/main.js?ver=1.2.0"></script>
+    <script src="~/js/typewrite.js"></script>
+    <script src="~/js/rain.js"></script>
+</body>
+</html>

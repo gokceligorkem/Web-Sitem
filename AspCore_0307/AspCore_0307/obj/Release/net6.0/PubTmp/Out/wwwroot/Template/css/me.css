@@ -1,0 +1,44 @@
+﻿#navbarSupportedContent .nav-link {
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    -webkit-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+    border: 2px solid transparent;
+}
+
+    #navbarSupportedContent .nav-link:hover {
+        box-shadow: 0 0 20px 2px black;
+        border-radius: 20px;
+    }
+.rain {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+    .rain .drop {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 3px;
+        height: 15px;
+        animation: falling 2s linear infinite;
+        pointer-events: none;
+    }
+
+@keyframes falling {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+}

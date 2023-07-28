@@ -1,0 +1,34 @@
+﻿@model AspCore_0307.Areas.Writer.Models.WriterReferansModel
+
+@{
+    ViewData["Title"] = "UpdateTestimonial";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+<h3>Referans Yayınlama sayfası</h3>
+<div class="container px-3">
+<form asp-action="UpdateTestimonial" method="post">
+        <div class="form-group">
+            <label>İşiniz</label>
+            <input type="text" asp-for="Job" class="form-control"  />
+
+        </div>
+        <div class="form-group">
+            <label>Mesajınız</label>
+            <input type="text" asp-for="Content" class="form-control" />
+
+        </div>
+
+    <div class="form-group">
+        <label class="control-label">Durum</label>
+        @Html.DropDownListFor(x => x.Status, new List<SelectListItem>
+        {
+        new SelectListItem { Text = "Aktif", Value = "true" },
+        new SelectListItem { Text = "Pasif", Value = "false" }
+        }, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Save Changes" class="btn btn-primary" />
+    </div>
+</form>
+</div>

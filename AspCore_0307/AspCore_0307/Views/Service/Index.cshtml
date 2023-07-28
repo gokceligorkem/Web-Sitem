@@ -1,0 +1,48 @@
+﻿@using EntityLayer.Concrete
+@model List<Service>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+<div class="container">
+    <div class="table-wrapper">
+        <div class="table-title">
+           
+            <div class="row d-flex">
+                <div class=" justify-content-end  ">
+                    <a href="/Service/AddService/" class="btn btn-success">Yeni Servis Ekle</a>
+                </div>   
+            </div>
+            <div><h2 class="text-center">Hizmet Sayfası</h2></div>
+        </div>
+        
+        <table class="table table-responsive mt-5">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Başlık</th>
+                    <th>Sil</th>
+                    <th>Düzenle</th>
+                </tr>
+            </thead>
+            <tbody>@foreach (var item in Model)
+                {
+                    
+                
+                <tr>
+                    <td></td>
+                    <td>@item.Title</td>
+
+
+                        <td><a href="/Service/RemoveService/@item.ServiceId" class="btn btn-outline-warning " onclick="return confirm('Bu hizmeti silmek istediğinize emin misiniz?')"><i class="mdi mdi-folder-remove"></i></a></td>
+                        <td><a href="/Service/UpdateService/@item.ServiceId" class="btn btn-outline-info">Güncelle</a></td>
+                    
+                </tr>
+                }
+            </tbody>
+        </table>
+      
+    </div>
+</div>
+

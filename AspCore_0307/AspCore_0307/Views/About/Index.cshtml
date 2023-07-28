@@ -1,0 +1,78 @@
+﻿@model EntityLayer.Concrete.About
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+@using (Html.BeginForm("UpdateAbout","About",FormMethod.Post)){
+<div class="card-body">
+    <form>
+        <h2 class="text-white text-center  mb-4">Hakkımda Düzenleme Sayfası</h2>
+        <div class="pl-lg-4">
+                
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        @Html.HiddenFor(x=>x.AboutId)
+                        @Html.Label("Başlık")
+                       @Html.TextBoxFor(x=>x.Title , new {@class="form-control"})
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                            @Html.Label("E mail Adres")
+                            @Html.TextBoxFor(x=>x.Mail , new {@class="form-control"})
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                            @Html.Label("Telefon")
+                            @Html.TextBoxFor(x=>x.Phone , new {@class="form-control"})
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                            @Html.Label("Yaş")
+                            @Html.TextBoxFor(x=>x.Age , new {@class="form-control"})
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <!-- Address -->
+        
+        <div class="pl-lg-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                            @Html.Label("Adres")
+                            @Html.TextBoxFor(x=>x.Adress , new {@class="form-control"})
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="form-group">
+                            @Html.Label("Img Url")
+                            @Html.TextBoxFor(x=>x.ImgUrl , new {@class="form-control"})
+                    </div>
+                </div>
+                
+               
+            </div>
+        </div>
+       
+        <!-- Description -->
+        
+        <div class="pl-lg-4">
+            <div class="form-group">
+                    @Html.Label("Hakkımda")
+                    @Html.TextAreaFor(x=>x.Description ,10,2, new {@class="form-control"})
+            </div>
+        </div>
+            <button type="submit" class="btn btn-outline-success ml-4">Güncelle</button>
+    </form>
+</div>
+}
+

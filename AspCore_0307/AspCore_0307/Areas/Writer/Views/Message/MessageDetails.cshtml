@@ -1,0 +1,31 @@
+﻿@model List<EntityLayer.Concrete.WriterMessage>
+
+@{
+    ViewData["Title"] = "MessageDetails";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+<div class="card col-12 mx-auto">
+    @foreach (var item in Model)
+    {
+        <div class="py-2 px-4 border-bottom d-none d-lg-block">
+            <div class="d-flex align-items-center py-1">
+                <div class="flex-grow-1 pl-3">
+                    <strong>Gönderen: @item.SenderName </strong> Email:[@item.Sender] <strong>Alıcı: @item.ReceiverName</strong> [@item.Receiver] kişisine
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-message-left pb-4">
+            
+            <div class="flex-grow-1 bg-secondary py-2 px-3 ml-3">
+                <div class="font-weight-bold mb-1">@item.SenderName <hr> </div>
+                @item.MessageContent<div class="text-muted  text-right ">@item.Date.ToString("hh:mm tt")</div>
+            </div>
+        </div>
+    }
+
+
+
+</div>
+

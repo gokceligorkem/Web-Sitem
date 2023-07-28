@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0cBhEXARW6ukHmtHtIm1Zgh4u9fZuTDyTgp9kR8Y1H8=",
+  "Source": "AspCore_Api",
+  "BasePath": "_content/AspCore_Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

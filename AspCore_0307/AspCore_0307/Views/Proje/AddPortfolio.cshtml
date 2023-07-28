@@ -1,0 +1,96 @@
+﻿@model EntityLayer.Concrete.Portfolio
+
+@{
+    ViewData["Title"] = "AddPortfolio";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+@using (Html.BeginForm("AddPortfolio", "Proje", FormMethod.Post))
+{
+
+
+
+    <div class="col-12 grid-margin stretch-card mt-3">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-description text-center"> Deneyim Ekleme Paneli </h2>
+                <form class="forms-sample">
+
+                    <div class="form-group">
+                        <label>Proje Başlığı</label>
+                        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x=>x.Name,"", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label>Proje Başlığı</label>
+                        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x=>x.Name,"", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label>Proje Başlığı</label>
+                        @Html.TextBoxFor(x => x.Platform, new { @class = "form-control" })
+                       
+                    </div>
+                    <div class="form-group">
+                        <label>1.Görsel</label>
+                        @Html.TextBoxFor(x => x.ImgUrl, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x=>x.ImgUrl,"", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label>Tutar</label>
+                        @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x=>x.Price,"", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label>Tamamlanma Oranı</label>
+                        @Html.TextBoxFor(x => x.Value, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x=>x.Value,"", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label>1.Resim</label>
+                        @Html.TextBoxFor(x => x.Img1, new { @class = "form-control" })
+                        
+                    </div>
+                    <div class="form-group">
+                        <label>2.Resim</label>
+                        @Html.TextBoxFor(x => x.Img2, new { @class = "form-control" })
+                        
+                    </div>
+                    <div class="form-group">
+                        <label>3.Resim</label>
+                        @Html.TextBoxFor(x => x.Img3, new { @class = "form-control" })
+                        
+                    </div>
+                    <div class="form-group">
+                        <label>4.Resim</label>
+                        @Html.TextBoxFor(x => x.Img4, new { @class = "form-control" })
+                      
+                    </div>
+                    <div class="form-group">
+                        <label>2.Görsel Slider</label>
+                        @Html.TextBoxFor(x => x.SlidUrl, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x=>x.SlidUrl,"", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label>Proje URL</label>
+                        @Html.TextBoxFor(x => x.ProjectUrl, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x=>x.ProjectUrl,"", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+
+                        @Html.Label("Durum")
+                        @Html.DropDownListFor(x => x.Status, new List<SelectListItem>
+                    {
+                    new SelectListItem { Text = "Aktif", Value = "true" },
+                    new SelectListItem { Text = "Pasif", Value = "false" }
+                    }, new { @class = "form-control" })
+                    </div>
+            
+                    <button type="submit" class="btn btn-success mr-2">Kaydet</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+}
+

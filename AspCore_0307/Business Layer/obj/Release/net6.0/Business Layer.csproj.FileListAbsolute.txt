@@ -1,0 +1,19 @@
+C:\Users\fls20\source\repos\AspCore_0307\Business Layer\bin\Release\net6.0\Business Layer.deps.json
+C:\Users\fls20\source\repos\AspCore_0307\Business Layer\bin\Release\net6.0\Business Layer.runtimeconfig.json
+C:\Users\fls20\source\repos\AspCore_0307\Business Layer\bin\Release\net6.0\Business Layer.dll
+C:\Users\fls20\source\repos\AspCore_0307\Business Layer\bin\Release\net6.0\Business Layer.pdb
+C:\Users\fls20\source\repos\AspCore_0307\Business Layer\bin\Release\net6.0\DataAccessLayer.dll
+C:\Users\fls20\source\repos\AspCore_0307\Business Layer\bin\Release\net6.0\EntityLayer.dll
+C:\Users\fls20\source\repos\AspCore_0307\Business Layer\bin\Release\net6.0\DataAccessLayer.pdb
+C:\Users\fls20\source\repos\AspCore_0307\Business Layer\bin\Release\net6.0\EntityLayer.pdb
+C:\Users\fls20\source\repos\AspCore_0307\Business Layer\obj\Release\net6.0\Business Layer.csproj.AssemblyReference.cache
+C:\Users\fls20\source\repos\AspCore_0307\Business Layer\obj\Release\net6.0\Business Layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fls20\source\repos\AspCore_0307\Business Layer\obj\Release\net6.0\Business Layer.AssemblyInfoInputs.cache
+C:\Users\fls20\source\repos\AspCore_0307\Business Layer\obj\Release\net6.0\Business Layer.AssemblyInfo.cs
+C:\Users\fls20\source\repos\AspCore_0307\Business Layer\obj\Release\net6.0\Business Layer.csproj.CoreCompileInputs.cache
+C:\Users\fls20\source\repos\AspCore_0307\Business Layer\obj\Release\net6.0\Business Layer.csproj.CopyComplete
+C:\Users\fls20\source\repos\AspCore_0307\Business Layer\obj\Release\net6.0\Business Layer.dll
+C:\Users\fls20\source\repos\AspCore_0307\Business Layer\obj\Release\net6.0\refint\Business Layer.dll
+C:\Users\fls20\source\repos\AspCore_0307\Business Layer\obj\Release\net6.0\Business Layer.pdb
+C:\Users\fls20\source\repos\AspCore_0307\Business Layer\obj\Release\net6.0\Business Layer.genruntimeconfig.cache
+C:\Users\fls20\source\repos\AspCore_0307\Business Layer\obj\Release\net6.0\ref\Business Layer.dll

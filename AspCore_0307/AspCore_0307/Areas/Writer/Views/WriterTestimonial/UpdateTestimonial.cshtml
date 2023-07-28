@@ -1,0 +1,21 @@
+﻿@model AspCore_0307.Areas.Writer.Models.WriterReferansModel
+@{
+    ViewData["Title"] = "UpdateTestimonial";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+<form class="pt-3" method="post">
+    <div class="form-group">
+        <label>İşiniz</label>
+        <input type="text" asp-for="Job" class="form-control" />
+        
+    </div>
+    <div class="form-group">
+        <label>Mesajınız</label>
+        <input type="text" asp-for="Content" class="form-control" />
+      
+    </div>
+    <div class="mt-3 d-flex justify-content-end">
+        <button class="btn btn-outline-secondary">Güncelle</button>
+    </div>
+</form>

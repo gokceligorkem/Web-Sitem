@@ -1,0 +1,46 @@
+﻿@using EntityLayer.Concrete
+@model List<WriterUser>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+<h1>Referans Listeniz</h1>
+
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+    <tr>
+        <th>İşiniz</th>
+        <th>Messajınız</th>
+        <th>Durum</th>
+        <th>Güncelle</th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th>@item.Job</th>
+                <th>@item.Content</th>
+                <th>@if (item.Status)
+                    {
+                        <p class="text-success">Yayında</p>
+                    }
+                    else
+                    {
+                        <p class="text-danger">Bekleniyor.</p>
+
+                    }
+                </th>
+                <th>
+                    <div>
+                        <a href="/Writer/WriterTestimonial/UpdateTestimonial/@item.Id" class="btn-outline-primary">Referans Güncelle</a>
+                    </div>
+                </th>
+            </tr>
+        }
+       
+    </tbody>
+    
+</table>
+
